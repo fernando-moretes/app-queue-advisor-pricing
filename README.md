@@ -62,3 +62,13 @@ Released under the MIT License. See `LICENSE` for details.
 ---
 
 _Part of [Fernando Azevedo's engineering portfolio](https://github.com/fernandofatech) — cloud architecture, serverless and developer productivity._
+
+## Portfolio / Portfólio
+
+- **Live / Ao vivo:** [Queue Advisor Pricing App](https://queue.moretes.com)
+- **GitHub:** [fernandofatech/queue-advisor-pricing-app](https://github.com/fernandofatech/queue-advisor-pricing-app)
+- **Author / Autor:** [Fernando Francisco Azevedo](https://fernando.moretes.com) · [LinkedIn](https://www.linkedin.com/in/fernando-francisco-azevedo/) · [GitHub](https://github.com/fernandofatech)
+
+**PT-BR:** Pricing and queue advisory app published under moretes.com. Este repositório público faz parte do ecossistema de portfólio de Fernando Moretes, com foco em arquitetura de soluções, AWS, IA, automação e boas práticas de engenharia.
+
+**EN:** Pricing and queue advisory app published under moretes.com. This public repository is part of Fernando Moretes' portfolio ecosystem, focused on solution architecture, AWS, AI, automation, and pragmatic engineering practices.
