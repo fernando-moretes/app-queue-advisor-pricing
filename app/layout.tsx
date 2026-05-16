@@ -6,7 +6,7 @@ import { ThemeProvider } from "@/components/theme-provider"
 import { Toaster } from "@/components/ui/toaster"
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://queueadvisor.fernando.moretes.com"),
+  metadataBase: new URL("https://queue.moretes.com"),
   title: {
     default: "QueueAdvisor | AWS SQS vs Kafka Comparison Tool - Choose the Right Messaging Service",
     template: "%s | QueueAdvisor by Fernando Azevedo",
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     alternateLocale: ["pt_BR"],
-    url: "https://queueadvisor.fernando.moretes.com",
+    url: "https://queue.moretes.com",
     title: "QueueAdvisor - AWS SQS vs Kafka Comparison Tool with Real Pricing",
     description:
       "Make informed AWS messaging decisions with QueueAdvisor. Compare SQS and Kafka (MSK) across 9 regions with real-time pricing. Built by AWS Solutions Architect Fernando Francisco Azevedo.",
@@ -99,10 +99,10 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://queueadvisor.fernando.moretes.com",
+    canonical: "https://queue.moretes.com",
     languages: {
-      en: "https://queueadvisor.fernando.moretes.com",
-      pt: "https://queueadvisor.fernando.moretes.com",
+      en: "https://queue.moretes.com",
+      pt: "https://queue.moretes.com",
     },
   },
 }
@@ -118,7 +118,7 @@ export default function RootLayout({
       {
         "@type": "WebApplication",
         name: "QueueAdvisor",
-        url: "https://queueadvisor.fernando.moretes.com",
+        url: "https://queue.moretes.com",
         description:
           "AWS messaging service comparison tool with real pricing data across 9 regions. Compare Amazon SQS and Apache Kafka (MSK) with AI-powered recommendations.",
         applicationCategory: "DeveloperApplication",
@@ -168,7 +168,7 @@ export default function RootLayout({
           name: "Independent",
         },
         sameAs: [
-          "https://linkedin.com/in/fernando-francisco-azevedo",
+          "https://www.linkedin.com/in/fernando-francisco-azevedo/",
           "https://github.com/fernandofatech",
           "https://fernando.moretes.com",
         ],
@@ -180,19 +180,19 @@ export default function RootLayout({
             "@type": "ListItem",
             position: 1,
             name: "Home",
-            item: "https://queueadvisor.fernando.moretes.com",
+            item: "https://queue.moretes.com",
           },
           {
             "@type": "ListItem",
             position: 2,
             name: "Documentation",
-            item: "https://queueadvisor.fernando.moretes.com/docs",
+            item: "https://queue.moretes.com/docs",
           },
           {
             "@type": "ListItem",
             position: 3,
             name: "FAQ",
-            item: "https://queueadvisor.fernando.moretes.com/faq",
+            item: "https://queue.moretes.com/faq",
           },
         ],
       },
