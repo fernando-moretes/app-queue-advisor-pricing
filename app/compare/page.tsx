@@ -203,8 +203,8 @@ export default function ComparePage() {
                 {/* Cost Summary Cards */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
                   {selectedAnalysesData.map((analysis) => {
-                    const sqsCost = parseFloat(analysis.pricing.sqs["10M"].replace("$", "").replace(",", ""))
-                    const kafkaCost = parseFloat(analysis.pricing.kafka["10M"].replace("$", "").replace(",", ""))
+                    const sqsCost = parseFloat(analysis.pricing.sqs["10M"].replace(/[$,]/g, ""))
+                    const kafkaCost = parseFloat(analysis.pricing.kafka["10M"].replace(/[$,]/g, ""))
                     const savings = Math.abs(sqsCost - kafkaCost)
                     const sqsCheaper = sqsCost < kafkaCost
                     const savingsPercent = ((savings / Math.max(sqsCost, kafkaCost)) * 100).toFixed(0)
