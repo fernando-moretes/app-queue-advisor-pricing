@@ -1,0 +1,25 @@
+# Gerado por fernando-moretes/platform. Não edite aqui: mude no orquestrador e
+# rode `make rollout`. É o que o Backstage (backstage.home.lab) lê deste repo.
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: app-queue-advisor-pricing
+  description: Queue Advisor pricing app published under moretes.com with public GitHub documentation.
+  annotations:
+    github.com/project-slug: fernando-moretes/app-queue-advisor-pricing
+    backstage.io/source-location: url:https://github.com/fernando-moretes/app-queue-advisor-pricing
+    sonarqube.org/project-key: app-queue-advisor-pricing
+  links:
+    - url: https://github.com/fernando-moretes/app-queue-advisor-pricing/actions
+      title: Actions
+      icon: github
+    - url: https://sonarqube.home.lab/dashboard?id=app-queue-advisor-pricing
+      title: SonarQube
+    - url: https://defectdojo.home.lab/product?name=app-queue-advisor-pricing
+      title: DefectDojo
+  tags: [website, ci-node.yml]
+spec:
+  type: website
+  lifecycle: production
+  owner: group:plataforma
+  system: homelab
