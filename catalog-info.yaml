@@ -7,8 +7,12 @@ metadata:
   description: "Queue Advisor pricing app published under moretes.com with public GitHub documentation."
   annotations:
     github.com/project-slug: fernando-moretes/app-queue-advisor-pricing
-    backstage.io/source-location: url:https://github.com/fernando-moretes/app-queue-advisor-pricing
+    # URL da arvore com barra final: e dela que o TechDocs resolve `dir:.`;
+    # sem a barra ele sobe um nivel e pede api.github.com/repos/<dono> (404).
+    backstage.io/source-location: url:https://github.com/fernando-moretes/app-queue-advisor-pricing/tree/main/
     sonarqube.org/project-key: app-queue-advisor-pricing
+    # TechDocs: mkdocs.yml + docs/ do proprio repositorio (rolados pelo platform)
+    backstage.io/techdocs-ref: dir:.
   links:
     - url: https://github.com/fernando-moretes/app-queue-advisor-pricing/actions
       title: Actions
@@ -25,3 +29,20 @@ spec:
   lifecycle: production
   owner: group:plataforma
   system: homelab
+  providesApis:
+    - app-queue-advisor-pricing-api
+---
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: app-queue-advisor-pricing-api
+  description: "API de app-queue-advisor-pricing"
+  annotations:
+    github.com/project-slug: fernando-moretes/app-queue-advisor-pricing
+spec:
+  type: openapi
+  lifecycle: production
+  owner: group:plataforma
+  system: homelab
+  definition:
+    $text: ./docs/openapi.json
