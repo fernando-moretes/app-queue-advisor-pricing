@@ -1,0 +1,19 @@
+# Gerado por fernando-moretes/platform (TechDocs do Backstage). O conteudo e do
+# repositorio: escreva em docs/*.md; este arquivo so lista as paginas.
+site_name: app-queue-advisor-pricing
+site_description: "Queue Advisor pricing app published under moretes.com with public GitHub documentation."
+repo_url: https://github.com/fernando-moretes/app-queue-advisor-pricing
+edit_uri: edit/main/docs/
+docs_dir: docs
+plugins:
+  - techdocs-core
+nav:
+  - Visão geral: index.md
+  - Arquitetura: arquitetura.md
+  - Operação: operacao.md
+  - API: api.md
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - pymdownx.superfences
