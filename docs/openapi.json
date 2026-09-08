@@ -1,0 +1,27 @@
+{
+ "openapi": "3.0.3",
+ "info": {
+  "title": "app-queue-advisor-pricing",
+  "version": "0.0.0-gerado",
+  "description": "Queue Advisor pricing app published under moretes.com with public GitHub documentation.\n\nGerado do codigo por fernando-moretes/platform (scripts/gerar_openapi.py): paths e metodos sao reais, esquemas de corpo nao sao inferidos."
+ },
+ "x-gerado-por": "fernando-moretes/platform",
+ "servers": [
+  {
+   "url": "/"
+  }
+ ],
+ "paths": {
+  "/api/compare": {
+   "post": {
+    "summary": "POST /api/compare",
+    "x-arquivo": "app/api/compare/route.ts",
+    "responses": {
+     "200": {
+      "description": "OK"
+     }
+    }
+   }
+  }
+ }
+}
